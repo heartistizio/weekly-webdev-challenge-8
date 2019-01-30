@@ -1,0 +1,6 @@
+zadanie 8
+
+1. start 03.04.
+2. html/css/js
+3. rwd obowiazkowo
+4. przydatne hasla: circle progress bar js
