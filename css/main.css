@@ -286,6 +286,14 @@ h3 {
 
 }
 
+#portfolio header {
+    background: url('../img/portfolio-header.png') no-repeat;
+}
+
+#brands header {
+    background: url('../img/brands-header.png') no-repeat;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
