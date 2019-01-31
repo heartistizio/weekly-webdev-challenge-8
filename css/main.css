@@ -294,6 +294,96 @@ h3 {
     background: url('../img/brands-header.png') no-repeat;
 }
 
+.team-member {
+    margin: 0;
+    text-align: center;
+}
+
+.team-member.description {
+    position: relative;
+    margin: 10% 3% 0 3%;
+    border: 2px solid #000000;
+    border-bottom: none;
+    padding: 10% 3%;
+}
+
+.team-member.photo {
+    background-size: cover;
+    height: 30rem;
+}
+
+.team-member.border {
+    height: 70%;
+    margin: 0 3% 10% 3%;
+    border: 2px solid #FFFFFF;
+    border-top: none;
+}
+
+#adrianna .team-member.photo {
+    background: url('../img/team-adrianna.png') no-repeat;
+}
+
+
+#olivia .team-member.photo {
+    background: url('../img/team-olivia.png') no-repeat;
+}
+
+
+#thomas .team-member.photo {
+    background: url('../img/team-thomas.png') no-repeat;
+}
+
+
+#taylor .team-member.photo {
+    background: url('../img/team-taylor.png') no-repeat;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects img {
+    width: 33%;
+    filter: grayscale(1);
+}
+
+.projects img:hover {
+    width: 33%;
+    filter: grayscale(0);
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+}
+
+.brand-logo {
+    width: 32%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem #F5F5F5 solid;
+    filter: grayscale(1);
+    opacity: 0.3    ;
+}
+
+.brand-logo:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.main-footer {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.main-footer ul{
+    list-style: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
