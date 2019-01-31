@@ -1,44 +1,30 @@
+'use strict';
 
-const circle1 = new ProgressBar.Circle(projects, {
-  color: '#f34739',
-  strokeWidth: 2,
-  trailWidth: 1,
-  duration: 1500,
-  text: {
-    value: '0'
-  },
-  step: function (state, bar) {
-    bar.setText((bar.value() * 100).toFixed(0));
-  }
-});
 
-const circle2 = new ProgressBar.Circle(clients, {
-  color: '#009989',
-  strokeWidth: 2,
-  trailWidth: 1,
-  duration: 1500,
-  text: {
-    value: '0'
-  },
-  step: function (state, bar) {
-    bar.setText((bar.value() * 100).toFixed(0));
-  }
-});
+let circle1 = generateCircle(projects, '#F34739');
+let circle2 = generateCircle(clients, '#009989');
+let circle3 = generateCircle(months, '#152B3C');
 
-const circle3 = new ProgressBar.Circle(months, {
-  color: '#152b3c',
-  strokeWidth: 2,
-  trailWidth: 1,
-  duration: 1500,
-  text: {
-    value: '0'
-  },
-  step: function (state, bar) {
-    bar.setText((bar.value() * 100).toFixed(0));
-  }
-});
 
 circle1.animate(0.5);
 circle2.animate(0.35);
 circle3.animate(0.8);
+
+function open(){
+  document.querySelector('.menubar-nav').classList.remove('closed');
+
+}
+
+function close(){
+  document.querySelector('.menubar-nav').classList.add('closed');
+}
+
+let hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', open);
+
+let closeIcon = document.querySelector('.hamburger.close');
+closeIcon.addEventListener('click', close);
+
+let menuItem = document.querySelector('.menubar-menu');
+menuItem.addEventListener('click', close);
 
