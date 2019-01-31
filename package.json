@@ -66,6 +66,7 @@
     "url": "https://github.com/h5bp/html5-boilerplate.git"
   },
   "dependencies": {
-    "gulp": "^3.8.0"
+    "gulp": "^3.8.0",
+    "progressbar.js": "^1.0.1"
   }
 }
