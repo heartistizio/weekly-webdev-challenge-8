@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +13,6 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -28,35 +27,40 @@
   <nav class="menubar-nav">
       <button class="hamburger" type="button" title="Open menu"><img src="img/hamburger-icon.png" alt=""></button>
       <ul class="menubar-menu">
-        <li><a href="#our-team">OUR TEAM</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#brands">BRANDS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#our-team">Our team</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
   </nav>
 </header>
 
 <main>
   <header class="main-header">
-    <p>Need our help?</p>
-    <h1>TOP DESIGNERS</h1>
-    <button class="check-us">CHECK US</button><br/>
+    <p class="subtitle line"><span>Need our help?</span></p>
+    <h1 class="title">Top designers</h1>
+    <button class="main-header button">CHECK US</button><br/>
     <a href=#progress-bar><img src="img/arrows.png" alt=""></a>
   </header>
 
   <section id="progress-bar">
     <div class="progress-container">
-      <div class="progress-circle">
-        <p>35</p>
-        <p>CLIENTS</p>
+      <div class="progress-circle" id="projects">
+        <h3>Big projects</h3>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-circle" id="clients">
+        <h3>Clients</h3>
       </div>
       <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed incididunt!</p>
     </div>
 
-    <div class="progress-containter">
-      <div class="progress-circle">
-        <p>80</p>
-        <p>MONTHS</p>
+    <div class="progress-container">
+      <div class="progress-circle" id="months">
+        <h3>Months</h3>
       </div>
       <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
     </div>
@@ -65,29 +69,29 @@
   <section id="our-team">
     <header>
       <p>Meet us!</p>
-      <h3>OUR TEAM</h3>
+      <h3>Our team</h3>
     </header>
 
     <div class="team-member">
-      <h3>ADRIANNA</h3>
+      <h3>Adrianna</h3>
       <p>Senior Graphic Designer</p>
       <p>She is the graphic designer with 3 years of professional experience.</p>
     </div>
 
     <div class="team-member">
-      <h3>OLIVIA</h3>
+      <h3>Olivia</h3>
       <p>Art Director</p>
       <p>She is the art director with 8 years of professional experience.</p>
     </div>
 
     <div class="team-member">
-      <h3>THOMAS</h3>
+      <h3>Thomas</h3>
       <p>Software Engineer</p>
       <p>He is the software engineer with 5 years of professional experience.</p>
     </div>
 
     <div class="team-member">
-      <h3>TAYLOR</h3>
+      <h3>Taylor</h3>
       <p>CEO</p>
       <p>She is the boss in here</p>
     </div>
@@ -96,7 +100,7 @@
   <section id="portfolio">
     <header>
       <p>Check our projects!</p>
-      <h3>PORTFOLIO</h3>
+      <h3>Portfolio</h3>
     </header>
     <img src="img/portfolio-01.png" alt="">
     <img src="img/portfolio-02.png" alt="">>
@@ -115,7 +119,7 @@
   <section id="brands">
     <header>
       <p>We work for</p>
-      <h3>BRANDS</h3>
+      <h3>Brands</h3>
     </header>
     <img src="img/brand-01.png" alt="">
     <img src="img/brand-02.png" alt="">
@@ -135,15 +139,15 @@
     <nav>
       <ul>
         <li>
-          <h3>OUR TEAM</h3>
+          <h3>Our team</h3>
           <p>We are the best company in the entire world!</p>
         </li>
         <li>
-          <h3>ABOUT</h3>
+          <h3>About</h3>
           <p>We are the best company in the entire world!</p>
         </li>
         <li id="contact">
-          <h3>CONTACT</h3>
+          <h3>Contact</h3>
           <p>free@template.com</p>
           <p>www.freetemplate.com</p>
           tel. +48 123 456 79
@@ -154,24 +158,12 @@
 
 </main>
 
-<script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}"
-        crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>');</script>
-<script src="js/plugins.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/progressbar.js"></script>
 <script src="js/main.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () {
-    ga.q.push(arguments);
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto');
-  ga('send', 'pageview');
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
 </body>
 
 </html>
