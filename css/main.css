@@ -237,6 +237,25 @@ h3 {
     background-color: #FFFFFF;
 }
 
+#arrows {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    animation: jump 2s infinite;
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 0.5rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 .title {
     font-size: 4rem;
 }
@@ -301,7 +320,8 @@ h3 {
     position: absolute;
     top: 50%;
     left: -50%;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+}
 
 .section-header h4::after {
     content: '';
@@ -310,7 +330,8 @@ h3 {
     position: absolute;
     top: 50%;
     right: -50%;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+}
 
 #our-team header {
     background: url('../img/our-team-header.png') no-repeat;
@@ -403,7 +424,7 @@ h3 {
     justify-content: center;
     border: 0.2rem #F5F5F5 solid;
     filter: grayscale(1);
-    opacity: 0.3    ;
+    opacity: 0.3;
 }
 
 .brand-logo:hover {
@@ -411,24 +432,26 @@ h3 {
     filter: grayscale(0);
 }
 
-.main-footer {
+.main-footer .footer-nav {
     margin: 0;
     padding: 5rem 0;
     text-align: center;
     background: #181818;
     color: #FFFFFF;
+
 }
 
-.main-footer p{
+.main-footer .footer-nav p {
     color: #4B4B4B;
 
 }
 
+
 .main-footer .copyright {
+    text-align: center;
     background: #151515;
     color: #323232;
     margin: 0;
-    padding-bottom: 0;
 }
 
 .main-footer hr {
