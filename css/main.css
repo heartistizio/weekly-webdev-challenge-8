@@ -350,6 +350,11 @@ h3 {
     border-top: none;
 }
 
+.team-member hr {
+    border-top: 2px solid #F62700;
+    margin: 1rem 7rem;
+}
+
 #adrianna .team-member.photo {
     background: url('../img/team-adrianna.png') no-repeat;
 }
@@ -410,8 +415,25 @@ h3 {
     margin: 0;
     padding: 5rem 0;
     text-align: center;
-    background: #000000;
+    background: #181818;
     color: #FFFFFF;
+}
+
+.main-footer p{
+    color: #4B4B4B;
+
+}
+
+.main-footer .copyright {
+    background: #151515;
+    color: #323232;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.main-footer hr {
+    border-top: 2px solid #009684;
+    margin: 1rem 11rem;
 }
 
 
