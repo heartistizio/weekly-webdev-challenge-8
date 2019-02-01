@@ -41,7 +41,7 @@
     <header class="main-header">
         <h3>Need our help?</h3>
         <h1 class="title">Top designers</h1>
-        <button class="main-header button">CHECK US</button>
+        <button class="main-header button" onclick="location.href='#progress-bar'">CHECK US</button>
         <br/>
         <a href=#progress-bar id="arrows"><img src="img/arrows.png" alt=""></a>
     </header>
@@ -74,57 +74,58 @@
             <h4>Meet us!</h4>
             <h3>Our team</h3>
         </header>
+        <div class="team-members">
+            <div class="team-member" id="adrianna">
 
-        <div class="team-member" id="adrianna">
+                <div class="description">
+                    <h3>Adrianna</h3>
+                    <p>Senior Graphic Designer</p>
+                    <hr>
+                    <p>She is the graphic designer with 3 years of professional experience.</p>
+                </div>
+                <div class="triangle"></div>
+                <div class="photo">
+                    <div class="border"></div>
+                </div>
+            </div>
 
-            <div class="team-member description">
-                <h3>Adrianna</h3>
-                <p>Senior Graphic Designer</p>
-                <hr>
-                <p>She is the graphic designer with 3 years of professional experience.</p>
+            <div class="team-member" id="olivia">
+                <div class="description">
+                    <h3>Olivia</h3>
+                    <p>Art Director</p>
+                    <hr>
+                    <p>She is the art director with 8 years of professional experience.</p>
+                </div>
+                <div class="triangle"></div>
+                <div class="photo">
+                    <div class="border"></div>
+                </div>
             </div>
-            <div class="team-member triangle"></div>
-            <div class="team-member photo">
-                <div class="team-member photo border"></div>
-            </div>
-        </div>
 
-        <div class="team-member" id="olivia">
-            <div class="team-member description">
-                <h3>Olivia</h3>
-                <p>Art Director</p>
-                <hr>
-                <p>She is the art director with 8 years of professional experience.</p>
+            <div class="team-member" id="thomas">
+                <div class="description">
+                    <h3>Thomas</h3>
+                    <p>Software Engineer</p>
+                    <hr>
+                    <p>He is the software engineer with 5 years of professional experience.</p>
+                </div>
+                <div class="triangle"></div>
+                <div class="photo">
+                    <div class="border"></div>
+                </div>
             </div>
-            <div class="team-member triangle"></div>
-            <div class="team-member photo">
-                <div class="team-member photo border"></div>
-            </div>
-        </div>
 
-        <div class="team-member" id="thomas">
-            <div class="team-member description">
-                <h3>Thomas</h3>
-                <p>Software Engineer</p>
-                <hr>
-                <p>He is the software engineer with 5 years of professional experience.</p>
-            </div>
-            <div class="team-member triangle"></div>
-            <div class="team-member photo">
-                <div class="team-member photo border"></div>
-            </div>
-        </div>
-
-        <div class="team-member" id="taylor">
-            <div class="team-member description">
-                <h3>Taylor</h3>
-                <p>CEO</p>
-                <hr>
-                <p>She is the boss in here</p>
-            </div>
-            <div class="team-member triangle"></div>
-            <div class="team-member photo">
-                <div class="team-member photo border"></div>
+            <div class="team-member" id="taylor">
+                <div class="description">
+                    <h3>Taylor</h3>
+                    <p>CEO</p>
+                    <hr>
+                    <p>She is the boss in here</p>
+                </div>
+                <div class="triangle"></div>
+                <div class="photo">
+                    <div class="border"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -135,18 +136,21 @@
             <h3>Portfolio</h3>
         </header>
         <div class="projects">
-            <img src="img/portfolio-01.png" alt="">
-            <img src="img/portfolio-02.png" alt="">
-            <img src="img/portfolio-03.png" alt="">
-            <img src="img/portfolio-04.png" alt="">
-            <img src="img/portfolio-05.png" alt="">
-            <img src="img/portfolio-06.png" alt="">
-            <img src="img/portfolio-07.png" alt="">
-            <img src="img/portfolio-08.png" alt="">
-            <img src="img/portfolio-09.png" alt="">
-            <img src="img/portfolio-10.png" alt="">
-            <img src="img/portfolio-11.png" alt="">
-            <img src="img/portfolio-12.png" alt="">
+            <img src="img/portfolio-01.png" srcset="img/portfolio-d-01.png 640w" alt="">
+            <img src="img/portfolio-02.png" srcset="img/portfolio-d-02.png 640w" alt="">
+            <img src="img/portfolio-03.png" srcset="img/portfolio-d-03.png 640w" alt="">
+            <img src="img/portfolio-04.png" srcset="img/portfolio-d-04.png 640w" alt="">
+            <img src="img/portfolio-05.png" srcset="img/portfolio-d-05.png 640w" alt="">
+            <img src="img/portfolio-06.png" srcset="img/portfolio-d-06.png 640w" alt="">
+            <img src="img/portfolio-07.png" srcset="img/portfolio-d-07.png 640w" alt="">
+            <img src="img/portfolio-08.png" srcset="img/portfolio-d-08.png 640w" alt="">
+            <img src="img/portfolio-09.png" srcset="img/portfolio-d-09.png 640w" alt="">
+            <img src="img/portfolio-10.png" srcset="img/portfolio-d-10.png 640w" alt="">
+            <img src="img/portfolio-11.png" srcset="img/portfolio-d-11.png 640w" alt="">
+            <img src="img/portfolio-12.png" srcset="img/portfolio-d-12.png 640w" alt="">
+            <img src="" srcset="img/portfolio-d-13.png 640w" alt="">
+            <img src="" srcset="img/portfolio-d-14.png 640w" alt="">
+            <img src="" srcset="img/portfolio-d-15.png 640w" alt="">
         </div>
     </section>
 
@@ -168,6 +172,23 @@
             <div class="brand-logo"><img src="img/brand-10.png" alt=""></div>
             <div class="brand-logo"><img src="img/brand-11.png" alt=""></div>
             <div class="brand-logo"><img src="img/brand-12.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-13.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-14.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-15.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-16.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-17.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-18.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-19.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-20.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-21.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-22.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-23.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-24.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-25.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-26.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-27.png" alt=""></div>
+            <div class="brand-logo-d"><img src="img/brand-28.png" alt=""></div>
+
         </div>
     </section>
 

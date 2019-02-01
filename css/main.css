@@ -122,9 +122,6 @@ h3 {
     box-sizing: border-box;
     height: 3.2rem;
     background: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .menubar-nav {
@@ -165,7 +162,7 @@ h3 {
 .menubar-nav .menubar-menu {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 2rem 0;
     background: #FFFFFF;
     width: 120%;
     text-align: center;
@@ -336,47 +333,50 @@ h3 {
 
 #our-team header {
     background: url('../img/our-team-header.png') no-repeat;
+    background-size: cover;
 
 }
 
 #portfolio header {
     background: url('../img/portfolio-header.png') no-repeat;
+    background-size: cover;
 }
 
 #brands header {
     background: url('../img/brands-header.png') no-repeat;
+    background-size: cover;
 }
 
 .team-member {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
-.team-member.description {
+.team-member .description {
     position: relative;
     margin: 10% 3% 0 3%;
-    border: 2px solid #000000;
+    border: 0.2rem solid #000000;
     border-bottom: none;
     padding: 10% 3%;
 }
 
-.team-member.photo {
+.team-member .photo {
     background-size: cover;
     height: 24rem;
     background-repeat: no-repeat;
 }
 
-.team-member.triangle {
+.team-member .triangle {
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #FFFFFF;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-top: 2rem solid #FFFFFF;
     position: absolute;
     left: 45%;
 }
 
-.team-member.border {
+.team-member .border {
     height: 90%;
     margin: 0 3% 10% 3%;
     border: 2px solid #FFFFFF;
@@ -388,28 +388,29 @@ h3 {
     margin: 1rem 7rem;
 }
 
-#adrianna .team-member.photo {
+#adrianna .photo {
     background-image: url('../img/team-adrianna.png');
 }
 
 
-#olivia .team-member.photo {
-    background: url('../img/team-olivia.png') no-repeat;
+#olivia .photo {
+    background-image: url('../img/team-olivia.png');
 }
 
 
-#thomas .team-member.photo {
+#thomas .photo {
     background-image: url('../img/team-thomas.png');
 }
 
 
-#taylor .team-member.photo {
-    background: url('../img/team-taylor.png') no-repeat;
+#taylor .photo {
+    background-image: url('../img/team-taylor.png');
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
 }
 
 .projects img {
@@ -418,17 +419,17 @@ h3 {
 }
 
 .projects img:hover {
-    width: 33%;
     filter: grayscale(0);
 }
 
 .brand-logos {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 4rem 0;
 }
 
-.brand-logo {
+.brand-logo, .brand-logo-d {
     width: 32%;
     height: 15rem;
     display: flex;
@@ -439,7 +440,11 @@ h3 {
     opacity: 0.3;
 }
 
-.brand-logo:hover {
+.brand-logo-d {
+    display: none;
+}
+
+.brand-logo:hover, .brand-logo-d:hover {
     opacity: 1;
     filter: grayscale(0);
 }
@@ -471,6 +476,149 @@ h3 {
     margin: 1rem 11rem;
 }
 
+@media (min-width: 64rem) {
+    .menubar-nav {
+        background: #101010;
+    }
+
+    .main-header {
+        background: url('../img/header-background-screen.png') no-repeat;
+        background-size: cover;
+    }
+
+
+    #progress-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #our-team header {
+        background: url("../img/our-team-header-d.png") no-repeat;
+        background-size: cover;
+    }
+
+    #portfolio header {
+        background: url("../img/portfolio-header-d.png") no-repeat;
+        background-size: cover;
+    }
+
+    #brands header {
+        background: url("../img/brands-header-d.png") no-repeat;
+        background-size: cover;
+    }
+
+    .team-members {
+        margin: 0 20%;
+        padding: 0;
+    }
+
+    .team-member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .team-member .description {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .team-member .photo {
+        margin-top: 1rem;
+        flex-basis: 50%;
+    }
+
+    .team-member .border {
+        margin-top: 3rem;
+        border-top: 0.2rem solid #FFFFFF;
+        height: 70%;
+    }
+
+    .team-member:nth-child(even) .description {
+        border-right: none;
+        border-bottom: 2px solid #000000;
+    }
+
+    .team-member:nth-child(even) .border {
+        margin-left: 0;
+    }
+
+    .team-member:nth-child(even) .triangle {
+        border-top: 3rem solid transparent;
+        border-bottom: 3rem solid transparent;
+        border-left: 3rem solid #FFFFFF;
+        left: 50%;
+        margin-top: 2rem;
+    }
+
+    .team-member:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .team-member:nth-child(odd) .description {
+        border-left: none;
+        border-bottom: 2px solid #000000;
+    }
+
+    .team-member:nth-child(odd) .border {
+        margin-right: 0;
+    }
+
+    .team-member:nth-child(odd) .triangle {
+        border-top: 3rem solid transparent;
+        border-bottom: 3rem solid transparent;
+        border-right: 3rem solid white;
+        left: 47.5%;
+        margin-top: 2rem;
+    }
+
+    .team-member:first-child {
+        margin-top: 10%;
+    }
+
+    .team-member:last-child {
+        margin-bottom: 10%;
+    }
+
+    #adrianna .photo {
+        background-image: url("../img/team-adrianna-d.png");
+    }
+
+    #olivia .photo {
+        background-image: url("../img/team-olivia-d.png");
+    }
+
+    #thomas .photo {
+        background-image: url("../img/team-thomas-d.png");
+    }
+
+    #taylor .photo {
+        background-image: url("../img/team-taylor-d.png");
+    }
+
+    .projects img {
+        width: 14%
+    }
+
+
+    .brand-logos {
+        width: 100%;
+    }
+
+    .brand-logo {
+        width: 13%;
+    }
+
+    .brand-logo-d {
+        display: flex;
+        width: 13%;
+    }
+
+}
 
 /* ==========================================================================
    Helper classes
