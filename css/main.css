@@ -258,6 +258,7 @@ h3 {
     font-size: 4rem;
 }
 
+
 .progress-container {
     text-align: center;
     display: flex;
@@ -291,6 +292,7 @@ h3 {
 .progress-container #months h3 {
     left: 30%;
 }
+
 
 .section-header {
     color: #FFFFFF;
@@ -412,10 +414,18 @@ h3 {
     flex-wrap: wrap;
     overflow: auto;
 }
-
 .projects img {
-    width: 33%;
     filter: grayscale(1);
+}
+
+
+.projects .photo-m {
+    width: 33%;
+    display: block;
+}
+
+.projects .photo-d {
+    display: none;
 }
 
 .projects img:hover {
@@ -492,6 +502,11 @@ h3 {
         align-items: center;
         justify-content: center;
     }
+
+    #progress-bar p{
+        width: 50%
+    }
+
 
     #our-team header {
         background: url("../img/our-team-header-d.png") no-repeat;
@@ -600,9 +615,21 @@ h3 {
         background-image: url("../img/team-taylor-d.png");
     }
 
-    .projects img {
-        width: 14%
+    .projects {
+        display: flex;
+        justify-content: center;
     }
+
+    .projects .photo-m {
+        display: none;
+    }
+
+    .projects .photo-d {
+        display: block;
+        width: 14%;
+    }
+
+
 
 
     .brand-logos {
