@@ -118,36 +118,32 @@ h3 {
 }
 
 .menubar {
-    margin: 1.5rem;
     box-sizing: border-box;
-    height: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 5.4rem;
     background: #FFFFFF;
 }
 
 .menubar-nav {
-    right: 100%;
-    width: 100%;
+    height: 5.4rem;
+    width: 25%;
+    float: right;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .menubar-nav .hamburger.icon, .hamburger.close {
     border: 0;
     background: 0;
-    position: absolute;
-    top: 1.8rem;
-    left: 85%;
     display: none;
 }
+
+
 
 .menubar-nav .hamburger.close {
     border: 0;
     background: 0;
-    position: absolute;
-    top: 1.8rem;
-    left: 85%;
     display: block;
 }
 
@@ -162,11 +158,14 @@ h3 {
 .menubar-nav .menubar-menu {
     list-style: none;
     padding: 0;
-    margin: 2rem 0;
     background: #FFFFFF;
-    width: 120%;
+    width: 100%;
     text-align: center;
+}
 
+.menubar-nav p {
+    color: #FFFFFF;
+    display: none;
 }
 
 .menubar-nav.closed .menubar-menu {
@@ -195,7 +194,6 @@ h3 {
     padding: 5rem 1.5rem 4rem 1.5rem;
     text-align: center;
     color: #FFFFFF;
-    margin: 3rem 0;
 
 }
 
@@ -495,6 +493,12 @@ h3 {
 @media (min-width: 64rem) {
     .menubar-nav {
         background: #101010;
+        display: flex;
+        justify-content: left;
+    }
+
+    .menubar-nav p {
+        display: block;
     }
 
     .main-header {
