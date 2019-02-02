@@ -465,11 +465,17 @@ h3 {
     text-align: center;
     background: #181818;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
+
 .main-footer .footer-nav p {
     color: #4B4B4B;
+    margin: 1rem 10%;
+    text-align: center;
 
 }
 
@@ -643,6 +649,28 @@ h3 {
     .brand-logo-d {
         display: flex;
         width: 13%;
+    }
+
+    .main-footer .footer-nav {
+        flex-direction: row;
+
+    }
+
+    .main-footer .footer-nav div {
+        width: 33%;
+        text-align: center;
+    }
+
+    .main-footer .footer-nav .our-team p{
+        padding: 0 30%;
+    }
+
+    .main-footer .footer-nav .about p{
+        padding: 0 30%;
+    }
+
+    .main-footer .footer-nav div hr {
+        margin: 0 40%;
     }
 
 }
