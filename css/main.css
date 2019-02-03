@@ -93,17 +93,20 @@ textarea {
 
 body {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 0;
     margin: 0;
 
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
     text-transform: uppercase;
     margin: 0;
 }
 
+h4, h5 {
+    margin: 0;
+}
 
 h1 {
     font-size: 5.6rem;
@@ -208,11 +211,13 @@ h3 {
 
 .menubar .menubar-nav .menubar-logo .logo {
     font-weight: lighter;
+    font-size: 1.8rem;
     height: 2rem;
+    text-align: center;
     text-decoration: none;
     color: #222222;
     border: 0.1rem solid #FF0000;
-    padding: 0.5rem;
+    padding: 1rem 1.5rem;
     -webkit-border-radius: 2.5rem 0 2.5rem 2.5rem;
     -moz-border-radius: 2.5rem 0 2.5rem 2.5rem;
     border-radius: 2.5rem 0 2.5rem 2.5rem;
@@ -249,6 +254,7 @@ h3 {
     position: relative;
     padding-top: 1.3rem;
     font-size: 2.4rem;
+    text-transform: none;
 }
 
 .main-header h3::before {
@@ -302,6 +308,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 25%;
 }
 
 .progress-container .progress-circle {
@@ -309,17 +316,18 @@ h3 {
     width: 20rem;
     height: 20rem;
     position: relative;
-    font-size: 5rem;
+    font-size: 7.2rem;
     font-weight: 700;
 }
 
-.progress-container h3 {
+.progress-container .progress-circle h3 {
     text-transform: uppercase;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400;
     position: absolute;
     top: 60%;
     left: 18%;
+
 }
 
 .progress-container #clients h3 {
@@ -347,27 +355,61 @@ h3 {
 
 .section-header h4 {
     font-weight: 300;
+    font-size: 1.8rem;
+    padding: 0 2rem;
     position: relative;
 }
 
 .section-header h4::before {
     content: '';
-    width: 40%;
+    width: 55%;
     height: 1px;
     position: absolute;
     top: 50%;
-    left: -50%;
+    right: 100%;
     background-color: #FFFFFF;
 }
 
 .section-header h4::after {
     content: '';
-    width: 40%;
+    width: 55%;
     height: 1px;
     position: absolute;
     top: 50%;
-    right: -50%;
+    left: 100%;
     background-color: #FFFFFF;
+}
+
+#portfolio .section-header h4 {
+    padding: 0 1rem;
+    font-size: 1.7rem;
+}
+
+#portfolio .section-header h4::before {
+    width: 25%;
+}
+
+#portfolio .section-header h4::after {
+    width: 25%;
+}
+
+#brands .section-header h4 {
+    padding: 0 1.5rem;
+    font-size: 1.7rem
+}
+
+#brands .section-header h4::before {
+    width: 25%;
+}
+
+#brands .section-header h4::after {
+    width: 25%;
+}
+
+
+.section-header h3 {
+    font-weight: 700;
+    font-size: 4.8rem;
 }
 
 #our-team header {
@@ -397,7 +439,20 @@ h3 {
     border: 0.2rem solid #000000;
     border-bottom: none;
     padding: 10% 3%;
+    font-weight: 400;
+    font-size: 2rem;
 }
+
+.team-member .description h3 {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.team-member .description h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 
 .team-member .photo {
     background-size: cover;
@@ -544,6 +599,11 @@ h3 {
     .menubar .menubar-nav .menubar-logo {
         width: 75%;
     }
+
+    .menubar .menubar-nav .menubar-logo .logo {
+        margin: 1.5rem 20rem;
+    }
+
     .menubar .menubar-nav .menubar-icon {
         background: #101010;
         display: flex;
@@ -553,6 +613,7 @@ h3 {
 
     .menubar .menubar-nav .menubar-icon p {
         display: block;
+        text-transform: uppercase;
     }
 
     .menubar .menubar-nav .menubar-content {
@@ -585,7 +646,6 @@ h3 {
 
 
 
-
     .menubar .menubar-nav .menubar-content .menubar-menu a {
         color: #FFFFFF;
 
@@ -594,6 +654,36 @@ h3 {
     .main-header {
         background: url('../img/header-background-screen.png') no-repeat;
         background-size: cover;
+    }
+
+    .main-header h3 {
+        padding-top: 18rem;
+    }
+
+    .main-header h3::before {
+        width: 5%;
+        top: 93%;
+        left: 55%;
+    }
+
+    .main-header h3::after {
+        width: 5%;
+        top: 93%;
+        right: 55%;
+    }
+
+    .main-header .title {
+        font-size: 7.2rem;
+        padding-top: 0;
+    }
+
+
+    .main-header .button {
+        padding: 1.5rem 5rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        border-radius: 3rem;
+        margin: 5rem 0 15rem 0;
     }
 
 
@@ -605,6 +695,15 @@ h3 {
 
     #progress-bar p{
         width: 50%
+    }
+
+    .progress-container {
+        padding: 0;
+    }
+
+    section .section-header {
+        padding: 12rem 1.5rem 12rem 1.5rem;
+        outline-offset: -5rem;
     }
 
 
