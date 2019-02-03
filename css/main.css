@@ -117,71 +117,101 @@ h3 {
     font-size: 2.5rem;
 }
 
-.menubar {
+.menubar .menubar-nav {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    height: 5.4rem;
+    justify-content: flex-end;
+    height: 6.5rem;
     background: #FFFFFF;
-}
-
-.menubar-nav {
-    height: 5.4rem;
-    width: 25%;
-    float: right;
-    display: flex;
     flex-wrap: wrap;
 }
 
-.menubar-nav .hamburger.icon, .hamburger.close {
+.menubar .menubar-nav .menubar-logo {
+    height: 6.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menubar .menubar-nav .menubar-logo a{
+    margin: 1.5rem 1rem;
+}
+
+.menubar .menubar-nav .menubar-icon {
+    height: 6.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menubar .menubar-nav .menubar-icon button{
+    padding: 3rem 1.5rem;
+}
+
+.menubar .menubar-nav .menubar-icon .hamburger.icon {
     border: 0;
     background: 0;
     display: none;
 }
 
-
-
-.menubar-nav .hamburger.close {
+.menubar .menubar-nav .menubar-icon .hamburger.close {
     border: 0;
     background: 0;
     display: block;
 }
 
-.menubar-nav.closed .hamburger.icon {
+.menubar .menubar-nav.closed .menubar-icon .hamburger.icon {
     display: block;
 }
 
-.menubar-nav.closed .hamburger.close {
+.menubar .menubar-nav.closed .menubar-icon .hamburger.white.icon {
     display: none;
 }
 
-.menubar-nav .menubar-menu {
-    list-style: none;
-    padding: 0;
-    background: #FFFFFF;
+.menubar .menubar-nav.closed .menubar-icon .hamburger.close {
+    display: none;
+}
+.menubar .menubar-nav.closed .menubar-icon .hamburger.white.close {
+    display: none;
+}
+.menubar .menubar-nav .menubar-icon .hamburger.white.close {
+    display: none;
+}
+
+.menubar .menubar-nav .menubar-content {
     width: 100%;
-    text-align: center;
+    background: #FFFFFF;
+    z-index: 1;
 }
 
-.menubar-nav p {
+.menubar .menubar-nav .menubar-content .menubar-menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menubar .menubar-nav .menubar-icon p {
     color: #FFFFFF;
     display: none;
 }
 
-.menubar-nav.closed .menubar-menu {
+.menubar .menubar-nav.closed .menubar-menu {
     display: none;
 }
 
-.menubar-nav .menubar-menu a {
+.menubar .menubar-nav .menubar-content .menubar-menu a {
     text-decoration: none;
     color: #222222;
 }
 
-.logo {
+.menubar .menubar-nav .menubar-logo .logo {
+    font-weight: lighter;
     height: 2rem;
     text-decoration: none;
     color: #222222;
-    border: 0.2rem solid #FF0000;
+    border: 0.1rem solid #FF0000;
     padding: 0.5rem;
     -webkit-border-radius: 2.5rem 0 2.5rem 2.5rem;
     -moz-border-radius: 2.5rem 0 2.5rem 2.5rem;
@@ -203,23 +233,31 @@ h3 {
     border-radius: 1.8rem;
     border: 0.2rem #FFFFFF solid;
     color: #FFFFFF;
+    margin: 5rem 0;
     padding: 0.8rem 2rem;
     background: 0;
+}
+
+.main-header h1 {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+    font-weight: 700;
 }
 
 .main-header h3 {
     font-weight: 300;
     position: relative;
-    padding-top: 125px;
+    padding-top: 1.3rem;
+    font-size: 2.4rem;
 }
 
 .main-header h3::before {
     content: '';
     position: absolute;
     height: 1px;
-    width: 10%;
-    top: 90%;
-    left: 7%;
+    width: 15%;
+    top: 70%;
+    left: 4%;
     background-color: #FFFFFF;
 }
 
@@ -227,11 +265,12 @@ h3 {
     content: '';
     position: absolute;
     height: 1px;
-    width: 10%;
-    top: 90%;
-    right: 7%;
+    width: 15%;
+    top: 70%;
+    right: 4%;
     background-color: #FFFFFF;
 }
+
 
 #arrows {
     position: relative;
@@ -469,10 +508,21 @@ h3 {
 
 }
 
+.main-footer .footer-nav h3 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main-footer .footer-nav div {
+}
+
 
 .main-footer .footer-nav p {
+    font-weight: 400;
+    font-size: 1.8rem;
     color: #4B4B4B;
-    margin: 1rem 10%;
+    margin: 1rem 20%;
     text-align: center;
 
 }
@@ -491,14 +541,54 @@ h3 {
 }
 
 @media (min-width: 64rem) {
-    .menubar-nav {
+    .menubar .menubar-nav .menubar-logo {
+        width: 75%;
+    }
+    .menubar .menubar-nav .menubar-icon {
         background: #101010;
         display: flex;
-        justify-content: left;
+        justify-content: flex-start;
+        width: 25%;
     }
 
-    .menubar-nav p {
+    .menubar .menubar-nav .menubar-icon p {
         display: block;
+    }
+
+    .menubar .menubar-nav .menubar-content {
+        width: 25%;
+        background: #101010;
+
+    }
+    .menubar .menubar-nav .menubar-content .menubar-menu  {
+        text-align: left;
+
+    }
+
+    .menubar .menubar-nav .menubar-icon .hamburger.close {
+        display: none;
+    }
+
+    .menubar .menubar-nav .menubar-icon .hamburger.white.close {
+        display: block;
+        color: #FFFFFF;
+    }
+
+
+    .menubar .menubar-nav.closed .menubar-icon .hamburger.icon {
+        display: none;
+    }
+
+    .menubar .menubar-nav.closed .menubar-icon .hamburger.white.icon {
+        display: block;
+    }
+
+
+
+
+    .menubar .menubar-nav .menubar-content .menubar-menu a {
+        color: #FFFFFF;
+
     }
 
     .main-header {
@@ -665,7 +755,8 @@ h3 {
         text-align: center;
     }
 
-    .main-footer .footer-nav .our-team p{
+    .main-footer .footer-nav div p{
+        margin: 0;
         padding: 0 30%;
     }
 

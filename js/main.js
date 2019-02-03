@@ -19,11 +19,17 @@ function close(){
   document.querySelector('.menubar-nav').classList.add('closed');
 }
 
-let hamburger = document.querySelector('.hamburger');
+let hamburger = document.querySelector('.icon');
 hamburger.addEventListener('click', open);
 
-let closeIcon = document.querySelector('.hamburger.close');
+let hamburgerW = document.querySelector('.white.icon');
+hamburgerW.addEventListener('click', open);
+
+let closeIcon = document.querySelector('.close');
 closeIcon.addEventListener('click', close);
+
+let closeIconW = document.querySelector('.white.close');
+closeIconW.addEventListener('click', close);
 
 let menuItem = document.querySelector('.menubar-menu');
 menuItem.addEventListener('click', close);

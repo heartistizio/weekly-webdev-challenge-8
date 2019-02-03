@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand:300,400,700" rel="stylesheet">
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -23,17 +23,23 @@
 <![endif]-->
 
 <header class="menubar">
-    <a class="logo" href="#" title="Go back to homepage">DSGN</a>
     <nav class="menubar-nav closed">
-        <button class="hamburger icon" type="button" title="Open menu"><img src="img/hamburger-icon.png" alt=""></button>
-        <p>Menu</p>
-        <button class="hamburger close" type="button" title="Close menu">X</button>
-        <ul class="menubar-menu">
-            <li><a href="#our-team">Our team</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#brands">Brands</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="menubar-logo"><a class="logo" href="#" title="Go back to homepage">DSGN</a></div>
+        <div class="menubar-icon">
+            <button class="hamburger icon" type="button" title="Open menu"><img src="img/hamburger-icon.png" alt=""></button>
+            <button class="hamburger white icon" type="button" title="Open menu"><img src="img/hamburger-icon-white.png" alt=""></button>
+            <button class="hamburger close" type="button" title="Close menu">X</button>
+            <button class="hamburger white close" type="button" title="Close menu">X</button>
+            <p>Menu</p>
+        </div>
+        <div class="menubar-content">
+            <ul class="menubar-menu">
+                <li><a href="#our-team">Our team</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
@@ -219,7 +225,7 @@
                 <p>We are the best company in the entire world!</p>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h3>Contact</h3>
                 <hr>
                 <p>free@template.com</p>
