@@ -241,6 +241,7 @@ h3 {
     margin: 5rem 0;
     padding: 0.8rem 2rem;
     background: 0;
+    text-transform: uppercase;
 }
 
 .main-header h1 {
