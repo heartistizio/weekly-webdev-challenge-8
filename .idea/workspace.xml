@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bf93b8c-71ea-4f04-aca1-20c552b413c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-05.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-07.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-09.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-12.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-13.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-19.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-20.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brand-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brand-28.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,20 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+            <state relative-caret-position="267">
+              <caret line="230" column="19" selection-start-line="230" selection-start-column="19" selection-end-line="230" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
+            <state relative-caret-position="675">
+              <caret line="217" column="14" lean-forward="true" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -73,6 +94,7 @@
       <find>margin: 5 0</find>
       <find>outline</find>
       <find>check us</find>
+      <find>button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,8 +107,8 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -173,7 +195,7 @@
       <updated>1548865769067</updated>
       <workItem from="1548865773499" duration="1384000" />
       <workItem from="1549147726513" duration="6374000" />
-      <workItem from="1549195089217" duration="6192000" />
+      <workItem from="1549195089217" duration="6838000" />
     </task>
     <task id="LOCAL-00001" summary="DONE: &#10;Fonts, font-weight, font-size&#10;&#10;TODO: &#10;&#10;Section headers border&#10;Move loading images into CSS">
       <created>1549200815817</created>
@@ -182,20 +204,27 @@
       <option name="project" value="LOCAL" />
       <updated>1549200815817</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed uppercase Check us button to text transform.">
+      <created>1549201377323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549201377323</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13950000" />
+    <option name="totallyTimeSpent" value="14596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980299" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980299" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3293556" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3293556" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3293556" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -217,7 +246,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DONE: &#10;Fonts, font-weight, font-size&#10;&#10;TODO: &#10;&#10;Section headers border&#10;Move loading images into CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="DONE: &#10;Fonts, font-weight, font-size&#10;&#10;TODO: &#10;&#10;Section headers border&#10;Move loading images into CSS" />
+    <MESSAGE value="Changed uppercase Check us button to text transform." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed uppercase Check us button to text transform." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/img/.gitignore" />
@@ -246,17 +276,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
+        <state relative-caret-position="267">
+          <caret line="230" column="19" selection-start-line="230" selection-start-column="19" selection-end-line="230" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+        <state relative-caret-position="675">
+          <caret line="217" column="14" lean-forward="true" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
         </state>
       </provider>
     </entry>
