@@ -8,3 +8,4 @@ https://heartistizio.github.io/wwdc8/index.html
 
 * Menubar-Navbar styling
 * Section headers borders
+* General refactor
