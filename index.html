@@ -15,19 +15,19 @@
 </head>
 
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience and security.</p>
-<![endif]-->
 
 <header class="menubar">
     <nav class="menubar-nav closed">
-        <div class="menubar-logo"><a class="logo" href="#" title="Go back to homepage">DSGN</a></div>
+        <div class="menubar-logo"><a class="logo" href="#" title="Go back to homepage">dsgn</a></div>
         <div class="menubar-icon">
-            <button class="hamburger icon" type="button" title="Open menu"><img src="img/hamburger-icon.png" alt=""></button>
-            <button class="hamburger white icon" type="button" title="Open menu"><img src="img/hamburger-icon-white.png" alt=""></button>
-            <button class="hamburger close" type="button" title="Close menu">X</button>
-            <button class="hamburger white close" type="button" title="Close menu">X</button>
+            <button class="hamburger icon" type="button" title="Open menu"><img src="img/hamburger-icon.png" alt="">
+            </button>
+            <button class="hamburger white icon" type="button" title="Open menu"><img src="img/hamburger-icon-white.png"
+                                                                                      alt=""></button>
+            <button class="hamburger close" type="button" title="Close menu"><img src="img/hamburger-icon.png" alt="">
+            </button>
+            <button class="hamburger white close" type="button" title="Close menu"><img
+                    src="img/hamburger-icon-white.png" alt=""></button>
             <p>Menu</p>
         </div>
         <div class="menubar-content">
@@ -43,10 +43,12 @@
 
 <main>
     <header class="main-header">
-        <h3>Need our help?</h3>
-        <h1 class="title">Top designers</h1>
-        <button class="main-header button" onclick="location.href='#progress-bar'">Check us</button>
-        <br/>
+        <div class="header-inner">
+            <h3>Need our help?</h3>
+            <h1 class="title">Top designers</h1>
+            <button class="main-header button" onclick="location.href='#progress-bar'">Check us</button>
+        </div>
+
         <a href=#progress-bar id="arrows"><img src="img/arrows.png" alt=""></a>
     </header>
 
@@ -75,8 +77,10 @@
 
     <section id="our-team">
         <header class="section-header">
-            <h4>Meet us!</h4>
-            <h3>Our team</h3>
+            <div class="info-container">
+                <h4>Meet us!</h4>
+                <h3>Our team</h3>
+            </div>
         </header>
         <div class="team-members">
             <div class="team-member" id="adrianna">
@@ -84,62 +88,50 @@
                 <div class="description">
                     <h3>Adrianna</h3>
                     <h4>Senior Graphic Designer</h4>
-                    <hr>
                     <p>She is the graphic designer with 3 years of professional experience.</p>
                 </div>
-                <div class="triangle"></div>
-                <div class="photo">
-                    <div class="border"></div>
-                </div>
+                <div class="photo"></div>
             </div>
 
             <div class="team-member" id="olivia">
                 <div class="description">
                     <h3>Olivia</h3>
                     <h4>Art Director</h4>
-                    <hr>
                     <p>She is the art director with 8 years of professional experience.</p>
                 </div>
                 <div class="triangle"></div>
-                <div class="photo">
-                    <div class="border"></div>
-                </div>
+                <div class="photo"></div>
             </div>
 
             <div class="team-member" id="thomas">
                 <div class="description">
                     <h3>Thomas</h3>
                     <h4>Software Engineer</h4>
-                    <hr>
                     <p>He is the software engineer with 5 years of professional experience.</p>
                 </div>
-                <div class="triangle"></div>
-                <div class="photo">
-                    <div class="border"></div>
-                </div>
+                <div class="photo"></div>
             </div>
 
             <div class="team-member" id="taylor">
                 <div class="description">
                     <h3>Taylor</h3>
                     <h4>CEO</h4>
-                    <hr>
                     <p>She is the boss in here</p>
                 </div>
-                <div class="triangle"></div>
-                <div class="photo">
-                    <div class="border"></div>
-                </div>
+
+                <div class="photo"> </div>
             </div>
         </div>
     </section>
 
     <section id="portfolio">
         <header class="section-header">
-            <h4>Check our projects!</h4>
-            <h3>Portfolio</h3>
+            <div class="info-container">
+                <h4>Check our projects!</h4>
+                <h3>Portfolio</h3>
+            </div>
         </header>
-      <!--  TODO: Move loading images into CSS -->
+        <!--  TODO: Move loading images into CSS -->
         <div class="projects">
             <img class="photo-m" src="img/portfolio-01-m.png" alt="">
             <img class="photo-m" src="img/portfolio-02-m.png" alt="">
@@ -181,8 +173,10 @@
 
     <section id="brands">
         <header class="section-header">
-            <h4>We work for</h4>
-            <h3>Brands</h3>
+            <div class="info-container">
+                <h4>We work for</h4>
+                <h3>Brands</h3>
+            </div>
         </header>
         <div class="brand-logos">
             <div class="brand-logo-d"><img src="img/brand-001.png" alt=""></div>
@@ -221,21 +215,18 @@
         <nav class="footer-nav">
             <div class="our-team">
                 <h3>Our team</h3>
-                <hr>
                 <p>We are the best company in the entire world!</p>
             </div>
             <div class="about">
                 <h3>About</h3>
-                <hr>
                 <p>We are the best company in the entire world!</p>
             </div>
 
             <div class="contact" id="contact">
                 <h3>Contact</h3>
-                <hr>
-                <p>free@template.com</p>
-                <p>www.freetemplate.com</p>
-                <p>tel. +48 123 456 79</p>
+                <p>free@template.com<br/>
+                www.freetemplate.com<br/>
+                tel. +48 123 456 79</p>
             </div>
 
         </nav>

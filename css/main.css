@@ -1,37 +1,24 @@
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 html {
     color: #222222;
     font-size: 62.5%;
-    line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 
 hr {
     display: block;
@@ -42,58 +29,10 @@ hr {
     padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
 body {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    width: 100%;
     padding: 0;
     margin: 0;
 
@@ -137,7 +76,7 @@ h3 {
     align-items: center;
 }
 
-.menubar .menubar-nav .menubar-logo a{
+.menubar .menubar-nav .menubar-logo a {
     margin: 1.5rem 1rem;
 }
 
@@ -149,7 +88,7 @@ h3 {
     align-items: center;
 }
 
-.menubar .menubar-nav .menubar-icon button{
+.menubar .menubar-nav .menubar-icon button {
     padding: 3rem 1.5rem;
 }
 
@@ -157,12 +96,14 @@ h3 {
     border: 0;
     background: 0;
     display: none;
+    cursor: pointer;
 }
 
 .menubar .menubar-nav .menubar-icon .hamburger.close {
     border: 0;
     background: 0;
     display: block;
+    cursor: pointer;
 }
 
 .menubar .menubar-nav.closed .menubar-icon .hamburger.icon {
@@ -176,9 +117,11 @@ h3 {
 .menubar .menubar-nav.closed .menubar-icon .hamburger.close {
     display: none;
 }
+
 .menubar .menubar-nav.closed .menubar-icon .hamburger.white.close {
     display: none;
 }
+
 .menubar .menubar-nav .menubar-icon .hamburger.white.close {
     display: none;
 }
@@ -210,17 +153,17 @@ h3 {
 }
 
 .menubar .menubar-nav .menubar-logo .logo {
+    text-transform: uppercase;
     font-weight: lighter;
     font-size: 1.8rem;
-    height: 2rem;
     text-align: center;
     text-decoration: none;
     color: #222222;
-    border: 0.1rem solid #FF0000;
-    padding: 1rem 1.5rem;
-    -webkit-border-radius: 2.5rem 0 2.5rem 2.5rem;
-    -moz-border-radius: 2.5rem 0 2.5rem 2.5rem;
-    border-radius: 2.5rem 0 2.5rem 2.5rem;
+    border: 0.1rem solid #f34739;
+    padding: 0.5rem 1rem;
+    -webkit-border-radius: 1.5rem 0 1.5rem 1.5rem;
+    -moz-border-radius: 1.5rem 0 1.5rem 1.5rem;
+    border-radius: 1.5rem 0 1.5rem 1.5rem;
 }
 
 .main-header {
@@ -251,31 +194,29 @@ h3 {
 }
 
 .main-header h3 {
-    font-weight: 300;
+    display: inline-block;
+    font-size: 1.9rem;
     position: relative;
-    padding-top: 1.3rem;
-    font-size: 2.4rem;
+    opacity: 0.75;
+    font-weight: 300;
     text-transform: none;
 }
 
-.main-header h3::before {
+.main-header h3::before, .main-header h3::after {
     content: '';
     position: absolute;
-    height: 1px;
-    width: 15%;
-    top: 70%;
-    left: 4%;
+    width: 40%;
+    height: 0.1rem;
+    top: 50%;
     background-color: #FFFFFF;
 }
 
+.main-header h3::before {
+    left: -50%;
+}
+
 .main-header h3::after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 15%;
-    top: 70%;
-    right: 4%;
-    background-color: #FFFFFF;
+    right: -50%;
 }
 
 
@@ -339,60 +280,74 @@ h3 {
     left: 30%;
 }
 
+section {
+    text-align: center;
+    width: 100%;
+}
 
-.section-header {
-    color: #FFFFFF;
+section .section-header {
+    background-repeat: no-repeat;
     background-size: cover;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 5rem 1.5rem 4rem 1.5rem;
-    outline: 0.1rem #FFFFFF solid;
-    outline-offset: -1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 3%;
 }
 
-.section-header h4 {
-    font-weight: 300;
-    font-size: 1.8rem;
-    padding: 0 2rem;
+#our-team .section-header {
+    background-image: url('../img/our-team-header.png');
+}
+
+#portfolio .section-header {
+    background-image: url('../img/portfolio-header.png');
+}
+
+#brands .section-header {
+    background-image: url('../img/brands-header.png');
+}
+
+
+.info-container {
+    display: block;
+    max-width: 950px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 10% 3%;
+    border: 0.2rem solid #ffffff;
+}
+
+.info-container h4 {
+    display: inline-block;
+    font-size: 1.9rem;
     position: relative;
+    opacity: 0.75;
 }
 
-.section-header h4::before {
+.info-container h4:before, .section-header h4:after {
     content: '';
-    width: 55%;
-    height: 1px;
     position: absolute;
-    top: 50%;
-    right: 100%;
-    background-color: #FFFFFF;
-}
-
-.section-header h4::after {
-    content: '';
-    width: 55%;
+    width: 40%;
     height: 1px;
-    position: absolute;
     top: 50%;
-    left: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
-#portfolio .section-header h4 {
-    padding: 0 1rem;
-    font-size: 1.7rem;
+.info-container h4:before {
+    left: -50%;
 }
 
-#portfolio .section-header h4::before {
-    width: 25%;
+.info-container h4:after {
+    right: -50%;
 }
 
-#portfolio .section-header h4::after {
-    width: 25%;
+.info-container h1, .section-header h2 {
+    font-family: 'quicksand-bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    margin: 1rem 0 3rem 0;
 }
+
+.info-container h2 {
+    font-size: 4.4rem;
+}
+
 
 #brands .section-header h4 {
     padding: 0 1.5rem;
@@ -408,78 +363,98 @@ h3 {
 }
 
 
-.section-header h3 {
+.info-container h3 {
     font-weight: 700;
     font-size: 4.8rem;
 }
 
-#our-team header {
-    background: url('../img/our-team-header.png') no-repeat;
-    background-size: cover;
-
-}
-
-#portfolio header {
-    background: url('../img/portfolio-header.png') no-repeat;
-    background-size: cover;
-}
-
-#brands header {
-    background: url('../img/brands-header.png') no-repeat;
-    background-size: cover;
-}
-
-.team-member {
-    margin: 0 auto;
+.team-members {
+    width: 90%;
+    max-width: 120rem;
+    margin: 4rem auto;
     text-align: center;
 }
 
-.team-member .description {
-    position: relative;
-    margin: 10% 3% 0 3%;
-    border: 0.2rem solid #000000;
-    border-bottom: none;
-    padding: 10% 3%;
-    font-weight: 400;
-    font-size: 2rem;
+.team-member {
+    max-width: 118rem;
 }
+
+.team-member p {
+    padding-top: 2rem;
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
 
 .team-member .description h3 {
     font-size: 3.6rem;
     font-weight: 400;
 }
 
-.team-member .description h4{
+.team-member .description h4 {
     font-size: 1.6rem;
     font-weight: 400;
+    position: relative;
+    padding-bottom: 2rem;
 }
 
-
-.team-member .photo {
-    background-size: cover;
-    height: 24rem;
-    background-repeat: no-repeat;
+.team-member .description h4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 0.3rem;
+    background: #F34739;
 }
 
-.team-member .triangle {
-    width: 0;
-    height: 0;
+.description {
+    position: relative;
+    margin: 10% 3% 0 3%;
+    border: 2px solid #454545;
+    border-bottom: none;
+    padding: 10% 3%;
+    height: 25rem;
+}
+
+.description:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-top: 2rem solid #fff;
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
-    border-top: 2rem solid #FFFFFF;
-    position: absolute;
-    left: 45%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 1;
 }
 
-.team-member .border {
-    height: 90%;
-    margin: 0 3% 10% 3%;
-    border: 2px solid #FFFFFF;
-    border-top: none;
+.photo {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
 }
+
+.photo:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-calc(94% - 0.4rem);
+    width: calc(94% - 0.4rem);
+    height: -webkit-calc(90% - 0.2rem);
+    height: calc(90% - 0.2rem);
+    margin: 0 3% 10% 3%;
+    border: 0.2rem solid #fff;
+    border-top: 0;
+}
+
 
 .team-member hr {
-    border-top: 2px solid #F62700;
+    border-top: 0.2rem solid #F62700;
     margin: 1rem 7rem;
 }
 
@@ -507,6 +482,7 @@ h3 {
     flex-wrap: wrap;
     overflow: auto;
 }
+
 .projects img {
     filter: grayscale(1);
 }
@@ -568,10 +544,22 @@ h3 {
     font-weight: 300;
     font-size: 3rem;
     text-align: center;
+    position: relative;
+    padding-bottom: 2rem;
 }
 
-.main-footer .footer-nav div {
+.main-footer .footer-nav h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
+    height: 0.2rem;
+    background: #009989;
 }
+
+
+
 
 
 .main-footer .footer-nav p {
@@ -580,6 +568,7 @@ h3 {
     color: #4B4B4B;
     margin: 1rem 20%;
     text-align: center;
+    padding: 2rem 0 0 0;
 
 }
 
@@ -591,14 +580,10 @@ h3 {
     margin: 0;
 }
 
-.main-footer hr {
-    border-top: 2px solid #009684;
-    margin: 1rem 11rem;
-}
 
 @media (min-width: 64rem) {
     .menubar .menubar-nav .menubar-logo {
-        width: 75%;
+        width: 70%;
     }
 
     .menubar .menubar-nav .menubar-logo .logo {
@@ -609,7 +594,7 @@ h3 {
         background: #101010;
         display: flex;
         justify-content: flex-start;
-        width: 25%;
+        width: 30%;
     }
 
     .menubar .menubar-nav .menubar-icon p {
@@ -618,12 +603,15 @@ h3 {
     }
 
     .menubar .menubar-nav .menubar-content {
-        width: 25%;
+        width: 30%;
         background: #101010;
 
     }
-    .menubar .menubar-nav .menubar-content .menubar-menu  {
+
+    .menubar .menubar-nav .menubar-content .menubar-menu {
         text-align: left;
+        margin: 0;
+        padding: 0 4rem;
 
     }
 
@@ -645,9 +633,12 @@ h3 {
         display: block;
     }
 
-
+    .menubar .menubar-nav .menubar-content .menubar-menu li {
+        padding: 2rem 0;
+    }
 
     .menubar .menubar-nav .menubar-content .menubar-menu a {
+        text-transform: uppercase;
         color: #FFFFFF;
 
     }
@@ -657,21 +648,10 @@ h3 {
         background-size: cover;
     }
 
-    .main-header h3 {
+    .header-inner {
         padding-top: 18rem;
     }
 
-    .main-header h3::before {
-        width: 5%;
-        top: 93%;
-        left: 55%;
-    }
-
-    .main-header h3::after {
-        width: 5%;
-        top: 93%;
-        right: 55%;
-    }
 
     .main-header .title {
         font-size: 7.2rem;
@@ -694,7 +674,7 @@ h3 {
         justify-content: center;
     }
 
-    #progress-bar p{
+    #progress-bar p {
         width: 50%
     }
 
@@ -702,102 +682,131 @@ h3 {
         padding: 0;
     }
 
-    section .section-header {
-        padding: 12rem 1.5rem 12rem 1.5rem;
-        outline-offset: -5rem;
+
+    #our-team .section-header {
+        background-image: url("../img/our-team-header-d.png");
     }
 
-
-    #our-team header {
-        background: url("../img/our-team-header-d.png") no-repeat;
-        background-size: cover;
+    #portfolio .section-header {
+        background-image: url("../img/portfolio-header-d.png");
     }
 
-    #portfolio header {
-        background: url("../img/portfolio-header-d.png") no-repeat;
-        background-size: cover;
+    #brands .section-header {
+        background-image: url("../img/brands-header-d.png");
     }
 
-    #brands header {
-        background: url("../img/brands-header-d.png") no-repeat;
-        background-size: cover;
-    }
-
-    .team-members {
-        margin: 0 20%;
-        padding: 0;
+    .info-container {
+        padding: 5% 3%;
     }
 
     .team-member {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
-        margin-bottom: 5%;
     }
 
     .team-member .description {
-        display: flex;
-        flex-direction: column;
+        -webkit-flex-basis: 50%;
         flex-basis: 50%;
-        padding: 0;
         margin: 0;
+        padding: 3.7rem 1.5rem;
+    }
+
+    .team-member .description:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-top: 2rem solid transparent;
+        border-bottom: 2rem solid transparent;
+        -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        -o-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+        z-index: 1;
     }
 
     .team-member .photo {
-        margin-top: 1rem;
         flex-basis: 50%;
     }
 
-    .team-member .border {
-        margin-top: 3rem;
+    .team-member .photo:after {
+        content: '';
+        display: block;
         border-top: 0.2rem solid #FFFFFF;
-        height: 70%;
+        width: -webkit-calc(100% - 2.2rem);
+        width: calc(100% - 2.2rem);
+        height: -webkit-calc(100% - 5.2rem);
+        height: calc(100% - 5.2rem);
     }
 
     .team-member:nth-child(even) .description {
         border-right: none;
-        border-bottom: 2px solid #000000;
+        border-bottom: 0.2rem solid #000;
     }
 
-    .team-member:nth-child(even) .border {
-        margin-left: 0;
+    .team-member:nth-child(even) .description:after {
+        left: 100%;
+        border-left: 2rem solid #fff;
+        border-right: none;
     }
 
-    .team-member:nth-child(even) .triangle {
-        border-top: 3rem solid transparent;
-        border-bottom: 3rem solid transparent;
-        border-left: 3rem solid #FFFFFF;
-        left: 50%;
-        margin-top: 2rem;
+    .team-member:nth-child(even) .photo:after {
+        border-left: none;
+        margin: 2.4rem 2rem 2rem 0;
     }
 
     .team-member:nth-child(odd) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     }
 
     .team-member:nth-child(odd) .description {
         border-left: none;
-        border-bottom: 2px solid #000000;
+        border-bottom: 0.2rem solid #000000;
     }
 
-    .team-member:nth-child(odd) .border {
-        margin-right: 0;
+    .team-member:nth-child(odd) .description:after {
+        right: 100%;
+        border-right: 2rem solid #FFFFFF;
+        border-left: none;
     }
 
-    .team-member:nth-child(odd) .triangle {
-        border-top: 3rem solid transparent;
-        border-bottom: 3rem solid transparent;
-        border-right: 3rem solid white;
-        left: 47.5%;
-        margin-top: 2rem;
+    .team-member:nth-child(odd) .photo:after {
+        border-right: none;
+        margin: 2.4rem 0 2rem 2rem;
     }
 
-    .team-member:first-child {
-        margin-top: 10%;
+    .team-member:last-child .description {
+        padding: 5.7rem 1.5rem;
     }
 
-    .team-member:last-child {
-        margin-bottom: 10%;
+    .team-member .employee-photo {
+        -webkit-flex-basis: 50%;
+        flex-basis: 50%;
     }
+
+    .team-member .employee-photo:after {
+        content: '';
+        display: block;
+        border-top: 0.2rem solid #fff;
+        width: -webkit-calc(100% - 2.2rem);
+        width: calc(100% - 2.2rem);
+        height: -webkit-calc(100% - 5.2rem);
+        height: calc(100% - 5.2rem);
+    }
+
 
     #adrianna .photo {
         background-image: url("../img/team-adrianna-d.png");
@@ -830,8 +839,6 @@ h3 {
     }
 
 
-
-
     .brand-logos {
         width: 100%;
     }
@@ -855,188 +862,11 @@ h3 {
         text-align: center;
     }
 
-    .main-footer .footer-nav div p{
+    .main-footer .footer-nav div p {
         margin: 0;
-        padding: 0 30%;
+        padding: 2rem 30% 0;
     }
 
-    .main-footer .footer-nav .about p{
-        padding: 0 30%;
-    }
 
-    .main-footer .footer-nav div hr {
-        margin: 0 40%;
-    }
 
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
