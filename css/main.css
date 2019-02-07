@@ -69,10 +69,10 @@ h3 {
 }
 
 .menubar .menubar-nav .menubar-logo {
-    height: 6.5rem;
-    width: 50%;
     display: flex;
-    justify-content: flex-start;
+    height: 6.5rem;
+    width: 90%;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -80,12 +80,27 @@ h3 {
     margin: 1.5rem 1rem;
 }
 
+.menubar-social {
+    list-style: none;
+    display: none;
+}
+
+.menubar-social li a{
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.menubar-social li a:hover{
+    color: #F34739;
+}
+
 .menubar .menubar-nav .menubar-icon {
     height: 6.5rem;
-    width: 50%;
+    width: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    cursor: pointer;
 }
 
 .menubar .menubar-nav .menubar-icon button {
@@ -110,19 +125,8 @@ h3 {
     display: block;
 }
 
-.menubar .menubar-nav.closed .menubar-icon .hamburger.white.icon {
-    display: none;
-}
 
 .menubar .menubar-nav.closed .menubar-icon .hamburger.close {
-    display: none;
-}
-
-.menubar .menubar-nav.closed .menubar-icon .hamburger.white.close {
-    display: none;
-}
-
-.menubar .menubar-nav .menubar-icon .hamburger.white.close {
     display: none;
 }
 
@@ -130,6 +134,7 @@ h3 {
     width: 100%;
     background: #FFFFFF;
     z-index: 1;
+    text-transform: uppercase;
 }
 
 .menubar .menubar-nav .menubar-content .menubar-menu {
@@ -145,6 +150,10 @@ h3 {
 
 .menubar .menubar-nav.closed .menubar-menu {
     display: none;
+}
+
+.menubar .menubar-nav .menubar-content .menubar-menu li {
+    padding: 2rem 0;
 }
 
 .menubar .menubar-nav .menubar-content .menubar-menu a {
@@ -178,13 +187,25 @@ h3 {
 .main-header.button {
     -webkit-border-radius: 1.8rem;
     -moz-border-radius: 1.8rem;
-    border-radius: 1.8rem;
+    border-radius: 2.5rem;
     border: 0.2rem #FFFFFF solid;
     color: #FFFFFF;
     margin: 5rem 0;
     padding: 0.8rem 2rem;
     background: 0;
     text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 300;
+    opacity: 0.9;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.main-header.button:hover {
+    background: #FFFFFF;
+    color: #000000;
 }
 
 .main-header h1 {
@@ -490,6 +511,7 @@ section .section-header {
 
 .projects .photo-m {
     width: 33%;
+    height: 33%;
     display: block;
 }
 
@@ -590,6 +612,10 @@ section .section-header {
         margin: 1.5rem 20rem;
     }
 
+    .menubar .menubar-nav .menubar-social {
+        display: flex
+    }
+
     .menubar .menubar-nav .menubar-icon {
         background: #101010;
         display: flex;
@@ -612,30 +638,19 @@ section .section-header {
         text-align: left;
         margin: 0;
         padding: 0 4rem;
-
+        cursor: pointer;
     }
 
     .menubar .menubar-nav .menubar-icon .hamburger.close {
-        display: none;
-    }
-
-    .menubar .menubar-nav .menubar-icon .hamburger.white.close {
         display: block;
         color: #FFFFFF;
     }
 
-
     .menubar .menubar-nav.closed .menubar-icon .hamburger.icon {
-        display: none;
+        color: #FFFFFF;
     }
 
-    .menubar .menubar-nav.closed .menubar-icon .hamburger.white.icon {
-        display: block;
-    }
 
-    .menubar .menubar-nav .menubar-content .menubar-menu li {
-        padding: 2rem 0;
-    }
 
     .menubar .menubar-nav .menubar-content .menubar-menu a {
         text-transform: uppercase;
@@ -672,6 +687,7 @@ section .section-header {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 4rem 0;
     }
 
     #progress-bar p {
@@ -836,6 +852,7 @@ section .section-header {
     .projects .photo-d {
         display: block;
         width: 14%;
+        height: 14%;
     }
 
 
@@ -843,8 +860,9 @@ section .section-header {
         width: 100%;
     }
 
-    .brand-logo {
+    .brand-logo, .brand-logo-d {
         width: 13%;
+        height: 25rem;
     }
 
     .brand-logo-d {

@@ -1,14 +1,21 @@
 'use strict';
 
 function menu() {
-    function open(){
-        document.querySelector('.menubar-nav').classList.add('opened');
 
+    function toggleMenu() {
+        document.querySelector('.menubar-nav').classList.toggle('closed');
     }
 
-    let hamburger = document.querySelector('.hamburger.icon');
-    hamburger.addEventListener('click', open());
+    function init() {
+        let button = document.querySelector('.menubar-icon');
+        button.addEventListener('click', toggleMenu);
 
-    let close = document.querySelector('.hamburger.close');
-    close.addEventListener('click', close);
+        let dropdownMenu = document.querySelector('.menubar-menu');
+        dropdownMenu.addEventListener('click', toggleMenu);
+    }
+
+    return {
+        init: init
+    };
+
 }

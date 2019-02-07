@@ -7,7 +7,7 @@
     <title>DSGN</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand:300,400,700" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
 
@@ -18,16 +18,20 @@
 
 <header class="menubar">
     <nav class="menubar-nav closed">
-        <div class="menubar-logo"><a class="logo" href="#" title="Go back to homepage">dsgn</a></div>
+        <div class="menubar-logo">
+            <a class="logo" href="#" title="Go back to homepage">dsgn</a>
+            <ul class="menubar-social">
+                <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </div>
         <div class="menubar-icon">
-            <button class="hamburger icon" type="button" title="Open menu"><img src="img/hamburger-icon.png" alt="">
+            <button class="hamburger icon" type="button" title="Open menu"><i class="fas fa-bars fa-2x"></i>
             </button>
-            <button class="hamburger white icon" type="button" title="Open menu"><img src="img/hamburger-icon-white.png"
-                                                                                      alt=""></button>
-            <button class="hamburger close" type="button" title="Close menu"><img src="img/hamburger-icon.png" alt="">
+            <button class="hamburger close" type="button" title="Close menu"><i class="fas fa-times fa-2x"></i>
             </button>
-            <button class="hamburger white close" type="button" title="Close menu"><img
-                    src="img/hamburger-icon-white.png" alt=""></button>
             <p>Menu</p>
         </div>
         <div class="menubar-content">
@@ -46,7 +50,7 @@
         <div class="header-inner">
             <h3>Need our help?</h3>
             <h1 class="title">Top designers</h1>
-            <button class="main-header button" onclick="location.href='#progress-bar'">Check us</button>
+            <button class="main-header button" onclick="location.href='#progress-bar'">Check us!</button>
         </div>
 
         <a href=#progress-bar id="arrows"><img src="img/arrows.png" alt=""></a>
@@ -238,6 +242,7 @@
 
 <script src="js/progressbar.js"></script>
 <script src="js/progresscircles.js"></script>
+<script src="js/menu.js"></script>
 <script src="js/main.js"></script>
 
 
